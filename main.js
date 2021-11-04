@@ -65,7 +65,7 @@ const View = (() => {
 // -----------------------------------Model--------------------------------------
 const Model = (() => {
     const getAlbums = (name) => {
-        return fetch(`https://itunes.apple.com/search?term=${name}&media=music&entity=album&attribute=artistTerm&limit=100`)
+        return fetch(`https://itunes.apple.com/search?term=${name}&media=music&entity=album&attribute=artistTerm&limit=200`)
             .then(response => response.json())
     }
 
